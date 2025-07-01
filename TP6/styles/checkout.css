@@ -130,178 +130,21 @@ header h1 span {
     font-size: 24px;
 }
 
-.categories-bar {
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #444;
-    color: white;
-    flex-wrap: wrap;
-    margin: 40px 160px;
-    border-radius: 20px;
-}
-
-.category {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 14px;
-    gap: 5px;
-    cursor: pointer;
-    transition: transform .2s ease;
-    padding: 0 25px;
-    margin-right: 30px;
-}
-
-.border-right {
-    border-right: 2px solid white;
-}
-
-.category i {
-    font-size: 32px;
-    color: white;
-}
-
-.category span {
-    color: white;
-}
-
-.category:hover {
-    transform: scale(1.05);
-}
-
-.border-right:last-child {
-    border-right: none;
-}
-
-.promo-slider {
-    background-color: var(--bg-color);
-    padding: 0px 20px;
-    margin-top: 20px;
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-    position: relative;
-}
-
-.promo-card {
-    position: relative;
-    top: -25px;
-    display: flex;
-    width: 40%;
-    height: 250px;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    z-index: 10;
-}
-
-.promo-card img {
-    display: block;
+/* MAIN */
+main {
     width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-.promo-text {
-    position: absolute;
-    bottom: 0;
-    padding: 35px;
-    color: #fff;
-    width: 100%;
+    height: calc(100vh - 60px);
+    padding-bottom: 60px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.promo-text h3 {
-  margin: 0;
-  font-size: 26px;
-}
-
-.promo-text p {
-  margin: 5px 0 0;
-  font-size: 16px;
-}
-
-/* INTERES */
-.interes {
-    margin: 40px 150px 0 160px;
-}
-
-.interes h1 {
-    font-size: 32px;
-    font-weight: 100;
-}
-
-.cards-conteiner {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.cards-interes {
-    width: 290px;
-    height: 360px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-    background-color: #eee;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.cards-interes img {
-    width: 270px;
-    height: 250px;
-    object-fit: fill;
-    border-radius: 10px;
-    margin-top: 10px;
-}
-
-.cards-interes-text {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 10px;
-    margin: 0 20px 0 20px;
-}
-
-.cards-interes h3 {
-    font-size: 24px;
-    padding-right: 40px;
-    text-wrap: nowrap;
-    color: black;
-    border-right: 1px solid #666;
-}
-
-.cards-interes-text p {
-    font-size: 18px;
-    padding-top: 12px;
-}
-
-/* LO + PEDIDO */
-
-.pedido {
-    margin: 40px 150px 0 160px;
-}
-
-.pedido h1 {
-    font-size: 32px;
-    font-weight: 100;
-}
-
-.cards-conteiner2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+main h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 42px;
+    color: var(--bg-color);
 }
 
 /* FOOTER */
@@ -309,7 +152,7 @@ footer {
   background-color: transparent;
   width: 100%;
   padding: 10px 20px;
-  position: relative;
+  position: fixed;
   bottom: 0;
   z-index: 999;
   color: #666666b6;
